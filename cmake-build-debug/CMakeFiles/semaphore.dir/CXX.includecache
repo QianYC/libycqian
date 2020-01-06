@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/semaphore.hpp
+shared_mutex
+-
+condition_variable
+-
+thread
+-
+mutex
+-
+
+../include/thread_pool.hpp
+mutex
+-
+condition_variable
+-
+functional
+-
+queue
+-
+thread
+-
+
+/home/yc_qian/CLionProjects/libycqian/examples/semaphore.cpp
+iostream
+-
+chrono
+-
+semaphore.hpp
+/home/yc_qian/CLionProjects/libycqian/examples/semaphore.hpp
+thread_pool.hpp
+/home/yc_qian/CLionProjects/libycqian/examples/thread_pool.hpp
+

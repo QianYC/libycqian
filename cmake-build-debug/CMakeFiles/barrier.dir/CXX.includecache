@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/barrier.hpp
+condition_variable
+-
+mutex
+-
+
+../include/thread_pool.hpp
+mutex
+-
+condition_variable
+-
+functional
+-
+queue
+-
+thread
+-
+
+/home/yc_qian/CLionProjects/libycqian/examples/barrier.cpp
+iostream
+-
+chrono
+-
+barrier.hpp
+/home/yc_qian/CLionProjects/libycqian/examples/barrier.hpp
+thread_pool.hpp
+/home/yc_qian/CLionProjects/libycqian/examples/thread_pool.hpp
+

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/barrier.dir/examples/barrier.cpp.o  -o barrier -lpthread 
