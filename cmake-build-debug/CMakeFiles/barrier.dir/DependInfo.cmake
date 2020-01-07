@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yc_qian/CLionProjects/libycqian/examples/barrier.cpp" "/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/CMakeFiles/barrier.dir/examples/barrier.cpp.o"
+  "/home/yc_qian/CLionProjects/libycqian/examples/thread/barrier.cpp" "/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/CMakeFiles/barrier.dir/examples/thread/barrier.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../include"
+  "../ycqian"
   )
 
 # Targets to which this target links.

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/semaphore.dir/examples/semaphore.cpp.o"
+  "CMakeFiles/semaphore.dir/examples/thread/semaphore.cpp.o"
   "semaphore.pdb"
   "semaphore"
 )

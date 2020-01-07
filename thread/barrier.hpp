@@ -49,8 +49,7 @@ namespace ycqian {
 
     class latch {
     private:
-        const unsigned int count;
-        unsigned int current;
+        unsigned int count;
         std::mutex mutex;
         std::condition_variable cv;
 
@@ -62,8 +61,8 @@ namespace ycqian {
         latch &operator=(const latch &) = delete;
 
         latch &operator=(latch &&) = delete;
-        
-        latch(unsigned int count):count(count),current(count) {
+
+        latch(unsigned int count) : count(count) {
             if (count == 0) {
                 throw std::runtime_error("count must be greater than 0!");
             }
@@ -71,11 +70,9 @@ namespace ycqian {
 
         void count_down() {
             std::lock_guard<std::mutex> lg(mutex);
-            if (current == 1) {
-                current = count;//reset
+            count--;
+            if (count == 0) {
                 cv.notify_all();
-            } else {
-                current--;
             }
         }
 

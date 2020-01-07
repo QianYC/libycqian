@@ -6,7 +6,17 @@
 
 #IncludeRegexTransform: 
 
-../include/thread_pool.hpp
+/home/yc_qian/CLionProjects/libycqian/examples/thread/thread_pool.cpp
+../../thread/thread_pool.hpp
+/home/yc_qian/CLionProjects/libycqian/thread/thread_pool.hpp
+iostream
+-
+chrono
+-
+future
+-
+
+/home/yc_qian/CLionProjects/libycqian/thread/thread_pool.hpp
 mutex
 -
 condition_variable
@@ -16,15 +26,5 @@ functional
 queue
 -
 thread
--
-
-/home/yc_qian/CLionProjects/libycqian/examples/thread_pool.cpp
-thread_pool.hpp
-/home/yc_qian/CLionProjects/libycqian/examples/thread_pool.hpp
-iostream
--
-chrono
--
-future
 -
 

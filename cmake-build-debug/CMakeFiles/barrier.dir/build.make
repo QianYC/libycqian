@@ -57,27 +57,27 @@ include CMakeFiles/barrier.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/barrier.dir/flags.make
 
-CMakeFiles/barrier.dir/examples/barrier.cpp.o: CMakeFiles/barrier.dir/flags.make
-CMakeFiles/barrier.dir/examples/barrier.cpp.o: ../examples/barrier.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/barrier.dir/examples/barrier.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/barrier.dir/examples/barrier.cpp.o -c /home/yc_qian/CLionProjects/libycqian/examples/barrier.cpp
+CMakeFiles/barrier.dir/examples/thread/barrier.cpp.o: CMakeFiles/barrier.dir/flags.make
+CMakeFiles/barrier.dir/examples/thread/barrier.cpp.o: ../examples/thread/barrier.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/barrier.dir/examples/thread/barrier.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/barrier.dir/examples/thread/barrier.cpp.o -c /home/yc_qian/CLionProjects/libycqian/examples/thread/barrier.cpp
 
-CMakeFiles/barrier.dir/examples/barrier.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/barrier.dir/examples/barrier.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yc_qian/CLionProjects/libycqian/examples/barrier.cpp > CMakeFiles/barrier.dir/examples/barrier.cpp.i
+CMakeFiles/barrier.dir/examples/thread/barrier.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/barrier.dir/examples/thread/barrier.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yc_qian/CLionProjects/libycqian/examples/thread/barrier.cpp > CMakeFiles/barrier.dir/examples/thread/barrier.cpp.i
 
-CMakeFiles/barrier.dir/examples/barrier.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/barrier.dir/examples/barrier.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yc_qian/CLionProjects/libycqian/examples/barrier.cpp -o CMakeFiles/barrier.dir/examples/barrier.cpp.s
+CMakeFiles/barrier.dir/examples/thread/barrier.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/barrier.dir/examples/thread/barrier.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yc_qian/CLionProjects/libycqian/examples/thread/barrier.cpp -o CMakeFiles/barrier.dir/examples/thread/barrier.cpp.s
 
 # Object files for target barrier
 barrier_OBJECTS = \
-"CMakeFiles/barrier.dir/examples/barrier.cpp.o"
+"CMakeFiles/barrier.dir/examples/thread/barrier.cpp.o"
 
 # External object files for target barrier
 barrier_EXTERNAL_OBJECTS =
 
-barrier: CMakeFiles/barrier.dir/examples/barrier.cpp.o
+barrier: CMakeFiles/barrier.dir/examples/thread/barrier.cpp.o
 barrier: CMakeFiles/barrier.dir/build.make
 barrier: CMakeFiles/barrier.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable barrier"

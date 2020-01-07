@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/barrier.dir/examples/barrier.cpp.o"
+  "CMakeFiles/barrier.dir/examples/thread/barrier.cpp.o"
   "barrier.pdb"
   "barrier"
 )

@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/yc_qian/CLionProjects/libycqian/include 
+CXX_INCLUDES = -I/home/yc_qian/CLionProjects/libycqian/ycqian 
 

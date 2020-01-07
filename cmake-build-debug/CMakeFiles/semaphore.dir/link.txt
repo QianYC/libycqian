@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/semaphore.dir/examples/semaphore.cpp.o  -o semaphore -lpthread 
+/usr/bin/c++  -g   CMakeFiles/semaphore.dir/examples/thread/semaphore.cpp.o  -o semaphore -lpthread 

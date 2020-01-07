@@ -6,13 +6,23 @@
 
 #IncludeRegexTransform: 
 
-../include/barrier.hpp
+/home/yc_qian/CLionProjects/libycqian/examples/thread/barrier.cpp
+iostream
+-
+chrono
+-
+../../thread/barrier.hpp
+/home/yc_qian/CLionProjects/libycqian/thread/barrier.hpp
+../../thread/thread_pool.hpp
+/home/yc_qian/CLionProjects/libycqian/thread/thread_pool.hpp
+
+/home/yc_qian/CLionProjects/libycqian/thread/barrier.hpp
 condition_variable
 -
 mutex
 -
 
-../include/thread_pool.hpp
+/home/yc_qian/CLionProjects/libycqian/thread/thread_pool.hpp
 mutex
 -
 condition_variable
@@ -23,14 +33,4 @@ queue
 -
 thread
 -
-
-/home/yc_qian/CLionProjects/libycqian/examples/barrier.cpp
-iostream
--
-chrono
--
-barrier.hpp
-/home/yc_qian/CLionProjects/libycqian/examples/barrier.hpp
-thread_pool.hpp
-/home/yc_qian/CLionProjects/libycqian/examples/thread_pool.hpp
 

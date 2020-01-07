@@ -17,6 +17,46 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/yc_qian/CLionProjects/libycqian/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/yc_qian/CLionProjects/libycqian/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/yc_qian/CLionProjects/libycqian/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/yc_qian/CLionProjects/libycqian/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/home/yc_qian/CLionProjects/libycqian/cmake-build-debug"/>
 				<Option type="4"/>
@@ -34,7 +74,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/yc_qian/CLionProjects/libycqian/include"/>
+					<Add directory="/home/yc_qian/CLionProjects/libycqian/ycqian"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -58,7 +98,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/yc_qian/CLionProjects/libycqian/include"/>
+					<Add directory="/home/yc_qian/CLionProjects/libycqian/ycqian"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -82,7 +122,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/yc_qian/CLionProjects/libycqian/include"/>
+					<Add directory="/home/yc_qian/CLionProjects/libycqian/ycqian"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -106,7 +146,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/yc_qian/CLionProjects/libycqian/include"/>
+					<Add directory="/home/yc_qian/CLionProjects/libycqian/ycqian"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -130,7 +170,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/yc_qian/CLionProjects/libycqian/include"/>
+					<Add directory="/home/yc_qian/CLionProjects/libycqian/ycqian"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -154,7 +194,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/yc_qian/CLionProjects/libycqian/include"/>
+					<Add directory="/home/yc_qian/CLionProjects/libycqian/ycqian"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -182,13 +222,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/yc_qian/CLionProjects/libycqian/examples/barrier.cpp">
+		<Unit filename="/home/yc_qian/CLionProjects/libycqian/examples/thread/barrier.cpp">
 			<Option target="barrier"/>
 		</Unit>
-		<Unit filename="/home/yc_qian/CLionProjects/libycqian/examples/semaphore.cpp">
+		<Unit filename="/home/yc_qian/CLionProjects/libycqian/examples/thread/semaphore.cpp">
 			<Option target="semaphore"/>
 		</Unit>
-		<Unit filename="/home/yc_qian/CLionProjects/libycqian/examples/thread_pool.cpp">
+		<Unit filename="/home/yc_qian/CLionProjects/libycqian/examples/thread/thread_pool.cpp">
 			<Option target="thread_pool"/>
 		</Unit>
 		<Unit filename="/home/yc_qian/CLionProjects/libycqian/CMakeLists.txt">

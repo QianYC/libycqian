@@ -3,8 +3,8 @@
 //
 #include <iostream>
 #include <chrono>
-#include "semaphore.hpp"
-#include "thread_pool.hpp"
+#include "../../thread/semaphore.hpp"
+#include "../../thread/thread_pool.hpp"
 
 int main(int argc, char **argv){
     ycqian::thread_pool pool(4);

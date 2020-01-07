@@ -1,7 +1,7 @@
 //
 // Created by yc_qian on 20-1-6.
 //
-#include "thread_pool.hpp"
+#include "../../thread/thread_pool.hpp"
 #include <iostream>
 #include <chrono>
 #include <future>
@@ -14,24 +14,37 @@ A var();
 int main(int argc, char **argv){
     ycqian::thread_pool pool(8);
 
+    /**
+     * calling lambda expression
+     */
     for (int i = 0; i < 10; ++i) {
         pool.execute([] {
             std::cout << std::this_thread::get_id() << " do sth...\n";
         });
     }
 
+    /**
+     * calling method
+     */
     pool.execute(foo);
     pool.execute(bar);
     pool.execute(var);
 
     /**
-     * passing parameters
+     * passing parameters with lambda expression
      */
     for (int j = 0; j < 4; ++j) {
         pool.execute([j] {
             std::cout << "task-" << j << std::endl;
         });
     }
+
+    /**
+     * passing parameters with std::bind
+     */
+    const char *str = "msgmsgmsgmsgmsgmsgmsg";
+    pool.execute(std::bind(printf, str));
+
     /**
      * wait some time to see the output
      */

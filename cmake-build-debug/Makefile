@@ -56,6 +56,52 @@ CMAKE_BINARY_DIR = /home/yc_qian/CLionProjects/libycqian/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/yc_qian/clion-2018.2.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/yc_qian/clion-2018.2.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/yc_qian/clion-2018.2.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/yc_qian/clion-2018.2.4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/yc_qian/clion-2018.2.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/yc_qian/clion-2018.2.4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -149,86 +195,86 @@ semaphore/fast:
 	$(MAKE) -f CMakeFiles/semaphore.dir/build.make CMakeFiles/semaphore.dir/build
 .PHONY : semaphore/fast
 
-examples/barrier.o: examples/barrier.cpp.o
+examples/thread/barrier.o: examples/thread/barrier.cpp.o
 
-.PHONY : examples/barrier.o
-
-# target to build an object file
-examples/barrier.cpp.o:
-	$(MAKE) -f CMakeFiles/barrier.dir/build.make CMakeFiles/barrier.dir/examples/barrier.cpp.o
-.PHONY : examples/barrier.cpp.o
-
-examples/barrier.i: examples/barrier.cpp.i
-
-.PHONY : examples/barrier.i
-
-# target to preprocess a source file
-examples/barrier.cpp.i:
-	$(MAKE) -f CMakeFiles/barrier.dir/build.make CMakeFiles/barrier.dir/examples/barrier.cpp.i
-.PHONY : examples/barrier.cpp.i
-
-examples/barrier.s: examples/barrier.cpp.s
-
-.PHONY : examples/barrier.s
-
-# target to generate assembly for a file
-examples/barrier.cpp.s:
-	$(MAKE) -f CMakeFiles/barrier.dir/build.make CMakeFiles/barrier.dir/examples/barrier.cpp.s
-.PHONY : examples/barrier.cpp.s
-
-examples/semaphore.o: examples/semaphore.cpp.o
-
-.PHONY : examples/semaphore.o
+.PHONY : examples/thread/barrier.o
 
 # target to build an object file
-examples/semaphore.cpp.o:
-	$(MAKE) -f CMakeFiles/semaphore.dir/build.make CMakeFiles/semaphore.dir/examples/semaphore.cpp.o
-.PHONY : examples/semaphore.cpp.o
+examples/thread/barrier.cpp.o:
+	$(MAKE) -f CMakeFiles/barrier.dir/build.make CMakeFiles/barrier.dir/examples/thread/barrier.cpp.o
+.PHONY : examples/thread/barrier.cpp.o
 
-examples/semaphore.i: examples/semaphore.cpp.i
+examples/thread/barrier.i: examples/thread/barrier.cpp.i
 
-.PHONY : examples/semaphore.i
+.PHONY : examples/thread/barrier.i
 
 # target to preprocess a source file
-examples/semaphore.cpp.i:
-	$(MAKE) -f CMakeFiles/semaphore.dir/build.make CMakeFiles/semaphore.dir/examples/semaphore.cpp.i
-.PHONY : examples/semaphore.cpp.i
+examples/thread/barrier.cpp.i:
+	$(MAKE) -f CMakeFiles/barrier.dir/build.make CMakeFiles/barrier.dir/examples/thread/barrier.cpp.i
+.PHONY : examples/thread/barrier.cpp.i
 
-examples/semaphore.s: examples/semaphore.cpp.s
+examples/thread/barrier.s: examples/thread/barrier.cpp.s
 
-.PHONY : examples/semaphore.s
+.PHONY : examples/thread/barrier.s
 
 # target to generate assembly for a file
-examples/semaphore.cpp.s:
-	$(MAKE) -f CMakeFiles/semaphore.dir/build.make CMakeFiles/semaphore.dir/examples/semaphore.cpp.s
-.PHONY : examples/semaphore.cpp.s
+examples/thread/barrier.cpp.s:
+	$(MAKE) -f CMakeFiles/barrier.dir/build.make CMakeFiles/barrier.dir/examples/thread/barrier.cpp.s
+.PHONY : examples/thread/barrier.cpp.s
 
-examples/thread_pool.o: examples/thread_pool.cpp.o
+examples/thread/semaphore.o: examples/thread/semaphore.cpp.o
 
-.PHONY : examples/thread_pool.o
+.PHONY : examples/thread/semaphore.o
 
 # target to build an object file
-examples/thread_pool.cpp.o:
-	$(MAKE) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/examples/thread_pool.cpp.o
-.PHONY : examples/thread_pool.cpp.o
+examples/thread/semaphore.cpp.o:
+	$(MAKE) -f CMakeFiles/semaphore.dir/build.make CMakeFiles/semaphore.dir/examples/thread/semaphore.cpp.o
+.PHONY : examples/thread/semaphore.cpp.o
 
-examples/thread_pool.i: examples/thread_pool.cpp.i
+examples/thread/semaphore.i: examples/thread/semaphore.cpp.i
 
-.PHONY : examples/thread_pool.i
+.PHONY : examples/thread/semaphore.i
 
 # target to preprocess a source file
-examples/thread_pool.cpp.i:
-	$(MAKE) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/examples/thread_pool.cpp.i
-.PHONY : examples/thread_pool.cpp.i
+examples/thread/semaphore.cpp.i:
+	$(MAKE) -f CMakeFiles/semaphore.dir/build.make CMakeFiles/semaphore.dir/examples/thread/semaphore.cpp.i
+.PHONY : examples/thread/semaphore.cpp.i
 
-examples/thread_pool.s: examples/thread_pool.cpp.s
+examples/thread/semaphore.s: examples/thread/semaphore.cpp.s
 
-.PHONY : examples/thread_pool.s
+.PHONY : examples/thread/semaphore.s
 
 # target to generate assembly for a file
-examples/thread_pool.cpp.s:
-	$(MAKE) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/examples/thread_pool.cpp.s
-.PHONY : examples/thread_pool.cpp.s
+examples/thread/semaphore.cpp.s:
+	$(MAKE) -f CMakeFiles/semaphore.dir/build.make CMakeFiles/semaphore.dir/examples/thread/semaphore.cpp.s
+.PHONY : examples/thread/semaphore.cpp.s
+
+examples/thread/thread_pool.o: examples/thread/thread_pool.cpp.o
+
+.PHONY : examples/thread/thread_pool.o
+
+# target to build an object file
+examples/thread/thread_pool.cpp.o:
+	$(MAKE) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/examples/thread/thread_pool.cpp.o
+.PHONY : examples/thread/thread_pool.cpp.o
+
+examples/thread/thread_pool.i: examples/thread/thread_pool.cpp.i
+
+.PHONY : examples/thread/thread_pool.i
+
+# target to preprocess a source file
+examples/thread/thread_pool.cpp.i:
+	$(MAKE) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/examples/thread/thread_pool.cpp.i
+.PHONY : examples/thread/thread_pool.cpp.i
+
+examples/thread/thread_pool.s: examples/thread/thread_pool.cpp.s
+
+.PHONY : examples/thread/thread_pool.s
+
+# target to generate assembly for a file
+examples/thread/thread_pool.cpp.s:
+	$(MAKE) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/examples/thread/thread_pool.cpp.s
+.PHONY : examples/thread/thread_pool.cpp.s
 
 # Help Target
 help:
@@ -236,20 +282,24 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/strip"
+	@echo "... install/local"
+	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... thread_pool"
 	@echo "... barrier"
 	@echo "... semaphore"
 	@echo "... edit_cache"
-	@echo "... examples/barrier.o"
-	@echo "... examples/barrier.i"
-	@echo "... examples/barrier.s"
-	@echo "... examples/semaphore.o"
-	@echo "... examples/semaphore.i"
-	@echo "... examples/semaphore.s"
-	@echo "... examples/thread_pool.o"
-	@echo "... examples/thread_pool.i"
-	@echo "... examples/thread_pool.s"
+	@echo "... examples/thread/barrier.o"
+	@echo "... examples/thread/barrier.i"
+	@echo "... examples/thread/barrier.s"
+	@echo "... examples/thread/semaphore.o"
+	@echo "... examples/thread/semaphore.i"
+	@echo "... examples/thread/semaphore.s"
+	@echo "... examples/thread/thread_pool.o"
+	@echo "... examples/thread/thread_pool.i"
+	@echo "... examples/thread/thread_pool.s"
 .PHONY : help
 
 

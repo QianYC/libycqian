@@ -57,27 +57,27 @@ include CMakeFiles/thread_pool.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/thread_pool.dir/flags.make
 
-CMakeFiles/thread_pool.dir/examples/thread_pool.cpp.o: CMakeFiles/thread_pool.dir/flags.make
-CMakeFiles/thread_pool.dir/examples/thread_pool.cpp.o: ../examples/thread_pool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/thread_pool.dir/examples/thread_pool.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/thread_pool.dir/examples/thread_pool.cpp.o -c /home/yc_qian/CLionProjects/libycqian/examples/thread_pool.cpp
+CMakeFiles/thread_pool.dir/examples/thread/thread_pool.cpp.o: CMakeFiles/thread_pool.dir/flags.make
+CMakeFiles/thread_pool.dir/examples/thread/thread_pool.cpp.o: ../examples/thread/thread_pool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/thread_pool.dir/examples/thread/thread_pool.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/thread_pool.dir/examples/thread/thread_pool.cpp.o -c /home/yc_qian/CLionProjects/libycqian/examples/thread/thread_pool.cpp
 
-CMakeFiles/thread_pool.dir/examples/thread_pool.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/thread_pool.dir/examples/thread_pool.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yc_qian/CLionProjects/libycqian/examples/thread_pool.cpp > CMakeFiles/thread_pool.dir/examples/thread_pool.cpp.i
+CMakeFiles/thread_pool.dir/examples/thread/thread_pool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/thread_pool.dir/examples/thread/thread_pool.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yc_qian/CLionProjects/libycqian/examples/thread/thread_pool.cpp > CMakeFiles/thread_pool.dir/examples/thread/thread_pool.cpp.i
 
-CMakeFiles/thread_pool.dir/examples/thread_pool.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/thread_pool.dir/examples/thread_pool.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yc_qian/CLionProjects/libycqian/examples/thread_pool.cpp -o CMakeFiles/thread_pool.dir/examples/thread_pool.cpp.s
+CMakeFiles/thread_pool.dir/examples/thread/thread_pool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/thread_pool.dir/examples/thread/thread_pool.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yc_qian/CLionProjects/libycqian/examples/thread/thread_pool.cpp -o CMakeFiles/thread_pool.dir/examples/thread/thread_pool.cpp.s
 
 # Object files for target thread_pool
 thread_pool_OBJECTS = \
-"CMakeFiles/thread_pool.dir/examples/thread_pool.cpp.o"
+"CMakeFiles/thread_pool.dir/examples/thread/thread_pool.cpp.o"
 
 # External object files for target thread_pool
 thread_pool_EXTERNAL_OBJECTS =
 
-thread_pool: CMakeFiles/thread_pool.dir/examples/thread_pool.cpp.o
+thread_pool: CMakeFiles/thread_pool.dir/examples/thread/thread_pool.cpp.o
 thread_pool: CMakeFiles/thread_pool.dir/build.make
 thread_pool: CMakeFiles/thread_pool.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable thread_pool"

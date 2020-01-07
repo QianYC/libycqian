@@ -57,27 +57,27 @@ include CMakeFiles/semaphore.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/semaphore.dir/flags.make
 
-CMakeFiles/semaphore.dir/examples/semaphore.cpp.o: CMakeFiles/semaphore.dir/flags.make
-CMakeFiles/semaphore.dir/examples/semaphore.cpp.o: ../examples/semaphore.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/semaphore.dir/examples/semaphore.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semaphore.dir/examples/semaphore.cpp.o -c /home/yc_qian/CLionProjects/libycqian/examples/semaphore.cpp
+CMakeFiles/semaphore.dir/examples/thread/semaphore.cpp.o: CMakeFiles/semaphore.dir/flags.make
+CMakeFiles/semaphore.dir/examples/thread/semaphore.cpp.o: ../examples/thread/semaphore.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/semaphore.dir/examples/thread/semaphore.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/semaphore.dir/examples/thread/semaphore.cpp.o -c /home/yc_qian/CLionProjects/libycqian/examples/thread/semaphore.cpp
 
-CMakeFiles/semaphore.dir/examples/semaphore.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/semaphore.dir/examples/semaphore.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yc_qian/CLionProjects/libycqian/examples/semaphore.cpp > CMakeFiles/semaphore.dir/examples/semaphore.cpp.i
+CMakeFiles/semaphore.dir/examples/thread/semaphore.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/semaphore.dir/examples/thread/semaphore.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yc_qian/CLionProjects/libycqian/examples/thread/semaphore.cpp > CMakeFiles/semaphore.dir/examples/thread/semaphore.cpp.i
 
-CMakeFiles/semaphore.dir/examples/semaphore.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/semaphore.dir/examples/semaphore.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yc_qian/CLionProjects/libycqian/examples/semaphore.cpp -o CMakeFiles/semaphore.dir/examples/semaphore.cpp.s
+CMakeFiles/semaphore.dir/examples/thread/semaphore.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/semaphore.dir/examples/thread/semaphore.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yc_qian/CLionProjects/libycqian/examples/thread/semaphore.cpp -o CMakeFiles/semaphore.dir/examples/thread/semaphore.cpp.s
 
 # Object files for target semaphore
 semaphore_OBJECTS = \
-"CMakeFiles/semaphore.dir/examples/semaphore.cpp.o"
+"CMakeFiles/semaphore.dir/examples/thread/semaphore.cpp.o"
 
 # External object files for target semaphore
 semaphore_EXTERNAL_OBJECTS =
 
-semaphore: CMakeFiles/semaphore.dir/examples/semaphore.cpp.o
+semaphore: CMakeFiles/semaphore.dir/examples/thread/semaphore.cpp.o
 semaphore: CMakeFiles/semaphore.dir/build.make
 semaphore: CMakeFiles/semaphore.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yc_qian/CLionProjects/libycqian/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable semaphore"
